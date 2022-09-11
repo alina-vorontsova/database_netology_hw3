@@ -49,245 +49,113 @@ CREATE TABLE IF NOT EXISTS SongCompilation (
 -- INSERT-запросы 
 -- не менее 8 исполнителей
 INSERT INTO Musician (name)
-VALUES ('David Bowie');
-
-INSERT INTO Musician (name)
-VALUES ('Iggy Pop');
-
-INSERT INTO Musician (name)
-VALUES ('Oasis');
-
-INSERT INTO Musician (name)
-VALUES ('The Smiths');
-
-INSERT INTO Musician (name)
-VALUES ('Brand New');
-
-INSERT INTO Musician (name)
-VALUES ('The Cure');
-
-INSERT INTO Musician (name)
-VALUES ('Blur');
-
-INSERT INTO Musician (name)
-VALUES ('My Chemical Romance');
+VALUES 
+	('David Bowie'), 
+	('Iggy Pop'),
+	('Oasis'),
+	('The Smiths'),
+	('Brand New'),
+	('The Cure'),
+	('Blur'),
+	('My Chemical Romance');
 
 -- не менее 5 жанров
 INSERT INTO Genre (name)
-VALUES ('britpop');
-
-INSERT INTO Genre (name)
-VALUES ('rock');
-
-INSERT INTO Genre (name)
-VALUES ('glam rock');
-
-INSERT INTO Genre (name)
-VALUES ('new wave');
-
-INSERT INTO Genre (name)
-VALUES ('alternative');
+VALUES 
+	('britpop'),
+	('rock'),
+	('glam rock'),
+	('new wave'),
+	('alternative');
 
 -- не менее 8 альбомов
 INSERT INTO Album (name, release_year)
-VALUES ('Heroes', 2020); -- неверный год, чтобы соответствовать условию выборки
-
-INSERT INTO Album (name, release_year)
-VALUES ('Lust for Life', 1977);
-
-INSERT INTO Album (name, release_year)
-VALUES ('Definitely Maybe', 2019); -- неверный год, чтобы соответствовать условию выборки
-
-INSERT INTO Album (name, release_year)
-VALUES ('The Queen is Dead', 1986);
-
-INSERT INTO Album (name, release_year)
-VALUES ('Deja Entendu', 2003);
-
-INSERT INTO Album (name, release_year)
-VALUES ('Wish', 2018); -- неверный год, чтобы соответствовать условию выборки 
-
-INSERT INTO Album (name, release_year)
-VALUES ('Parklife', 1994);
-
-INSERT INTO Album (name, release_year)
-VALUES ('Three Cheers for Sweet Revenge', 2018); -- неверный год, чтобы соответствовать условию выборки 
+VALUES 
+	('Heroes', 2020), -- неверный год, чтобы соответствовать условию выборки
+	('Lust for Life', 1977),
+	('Definitely Maybe', 2019), -- неверный год, чтобы соответствовать условию выборки
+	('The Queen is Dead', 1986), 
+	('Deja Entendu', 2003), 
+	('Wish', 2018), -- неверный год, чтобы соответствовать условию выборки
+	('Parklife', 1994),
+	('Three Cheers for Sweet Revenge', 2018); -- неверный год, чтобы соответствовать условию выборки 
 
 -- не менее 15 треков
 INSERT INTO Song (name, album_id, duration)
-VALUES ('Heroes', 1, 453);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('V-2 Schneider', 1, 191);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('The Passenger', 2, 281);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('Tonight', 2, 220);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('Live Forever', 3, 285);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('Supersonic', 3, 283);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('There Is a Light That Never Goes Out', 4, 215);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('Bigmouth Strikes Again', 3, 212);  -- неверный альбом, чтобы соответствовать условию выборки 
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('The Quiet Things That No One Ever Knows', 5, 241);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('The Boy Who Blocked His Own Shot', 5, 279);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('High', 6, 213);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('A Letter to my Elise', 6, 311); -- неверное название, чтобы соответствовать условию выборки 
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('Girls & Boys', 7, 291);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('Parklife', 7, 186);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('To the End', 8, 181);
-
-INSERT INTO Song (name, album_id, duration)
-VALUES ('My Interlude', 8, 57); -- неверное название, чтобы соответствовать условию выборки 
+VALUES
+	('Heroes', 1, 453),
+	('V-2 Schneider', 1, 191),
+	('The Passenger', 2, 281),
+	('Tonight', 2, 220),
+	('Live Forever', 3, 285),
+	('Supersonic', 3, 283),
+	('There Is a Light That Never Goes Out', 4, 215),
+	('Bigmouth Strikes Again', 3, 212),  -- неверный альбом, чтобы соответствовать условию выборки
+	('The Quiet Things That No One Ever Knows', 5, 241),
+	('The Boy Who Blocked His Own Shot', 5, 279),
+	('High', 6, 213),
+	('A Letter to my Elise', 6, 311), -- неверное название, чтобы соответствовать условию выборки
+	('Girls & Boys', 7, 291), 
+	('Parklife', 7, 186), 
+	('To the End', 8, 181),
+	('My Interlude', 8, 57); -- неверное название, чтобы соответствовать условию выборки 
 
 -- не менее 8 сборников
 INSERT INTO Compilation (name, release_year)
-VALUES ('Compilation1', 2000);
-
-INSERT INTO Compilation (name, release_year)
-VALUES ('Compilation2', 2002);
-
-INSERT INTO Compilation (name, release_year)
-VALUES ('Compilation3', 2005);
-
-INSERT INTO Compilation (name, release_year)
-VALUES ('Compilation4', 2008);
-
-INSERT INTO Compilation (name, release_year)
-VALUES ('Compilation5', 2013);
-
-INSERT INTO Compilation (name, release_year)
-VALUES ('Compilation6', 2018);
-
-INSERT INTO Compilation (name, release_year)
-VALUES ('Compilation7', 2020);
-
-INSERT INTO Compilation (name, release_year)
-VALUES ('Compilation8', 2021);
+VALUES 
+	('Compilation1', 2000),
+	('Compilation2', 2002),
+	('Compilation3', 2005),
+	('Compilation4', 2008),
+	('Compilation5', 2013),
+	('Compilation6', 2018),
+	('Compilation7', 2020),
+	('Compilation8', 2021);
 
 -- исполнители с альбомами
 INSERT INTO AlbumMusician (musician_id, album_id)
-VALUES (1, 1);
-
-INSERT INTO AlbumMusician (musician_id, album_id)
-VALUES (2, 2);
-
-INSERT INTO AlbumMusician (musician_id, album_id)
-VALUES (3, 3);
-
-INSERT INTO AlbumMusician (musician_id, album_id)
-VALUES (4, 4);
-
-INSERT INTO AlbumMusician (musician_id, album_id)
-VALUES (5, 5);
-
-INSERT INTO AlbumMusician (musician_id, album_id)
-VALUES (6, 6);
-
-INSERT INTO AlbumMusician (musician_id, album_id)
-VALUES (7, 7);
-
-INSERT INTO AlbumMusician (musician_id, album_id)
-VALUES (8, 8);
+VALUES 
+	(1, 1),
+	(2, 2),
+	(3, 3),
+	(4, 4),
+	(5, 5),
+	(6, 6),
+	(7, 7),
+	(8, 8);
 
 -- исполнители с жанрами
 INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (1, 3);
-
-INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (2, 3);
-
-INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (3, 1);
-
-INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (4, 4);
-
-INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (5, 2);
-
-INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (5, 5);
-
-INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (6, 4);
-
-INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (7, 1);
-
-INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (8, 2);
-
-INSERT INTO MusicianGenre (musician_id, genre_id)
-VALUES (8, 5);
+VALUES 
+	(1, 3),
+	(2, 3),
+	(3, 1),
+	(4, 4),
+	(5, 2),
+	(5, 5),
+	(6, 4),
+	(7, 1),
+	(8, 2),
+	(8, 5);
 
 -- сборники с треками
 INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (1, 1);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (1, 2);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (2, 3);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (2, 4);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (3, 5);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (3, 6);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (4, 7);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (4, 8);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (5, 9);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (5, 10);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (6, 11);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (6, 12);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (7, 13);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (7, 14);
-
-INSERT INTO SongCompilation (compilation_id, song_id)
-VALUES (8, 15);
+VALUES 
+	(1, 1),
+	(1, 2),
+	(2, 3),
+	(2, 4),
+	(3, 5),
+	(3, 6),
+	(4, 7),
+	(4, 8),
+	(5, 9),
+	(5, 10),
+	(6, 11),
+	(6, 12),
+	(7, 13),
+	(7, 14),
+	(8, 15);
 
 -- SELECT-запросы
 -- количество исполнителей в каждом жанре
